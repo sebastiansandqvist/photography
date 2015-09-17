@@ -1,6 +1,4 @@
-const react = require('react');
-
-class App extends react.Component {
+class App extends React.Component {
 
 	render() {
 		return (
@@ -12,4 +10,4 @@ class App extends react.Component {
 
 }
 
-react.render(<App/>, document.body);
+React.render(<App/>, document.body);

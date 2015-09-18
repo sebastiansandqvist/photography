@@ -1,15 +1,17 @@
 'use strict';
 
-const webpack = require('webpack');
-const Clean = require('clean-webpack-plugin');
+var Split = require('webpack-split-by-path');
 
 module.exports = {
 
-	entry: ['./app/app.js'],
+	entry: {
+		app: './app/app.js',
+	},
 
 	output: {
-		path: 'static/javascript/app',
-		filename: 'app.js'
+		path: __dirname + '/static/javascript',
+		filename: '[name].js',
+		chunkFilename: '[name].js'
 	},
 
 	module: {
@@ -21,7 +23,10 @@ module.exports = {
 	},
 
 	plugins: [
-		new Clean(['static/javascript/app'])
+		new Split([
+			{ name: 'react', path: __dirname + '/node_modules/react' },
+			{ name: 'radium', path: __dirname + '/node_modules/radium' }
+		])
 	]
 
 };

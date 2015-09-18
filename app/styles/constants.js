@@ -1,9 +1,11 @@
+'use strict';
+
 module.exports = {
 	
 	color: {
 		bg: '#111',
 		orange: '#f42'
-	}/*,
+	}/* ,
 
 	type: {
 		letterSpacing: 8,
@@ -19,4 +21,4 @@ module.exports = {
 		...
 	}
 */
-}
+};

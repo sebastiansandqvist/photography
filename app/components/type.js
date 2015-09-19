@@ -4,6 +4,10 @@ import Radium from 'radium';
 @Radium
 export class Title extends React.Component {
 
+	static propTypes = {
+		children: React.PropTypes.string.isRequired
+	}
+
 	style() {
 		return {
 			color: '#fff',

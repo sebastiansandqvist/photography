@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Sep, Two } from './components/layout';
+import { Container, Sep, Two, Three } from './components/layout';
 import { Title } from './components/type.js';
 import Img from './components/img.js'
 
@@ -15,6 +15,11 @@ class App extends React.Component {
 					<Img src="/photos/tomato.jpg"/>
 					<Img src="/photos/tomato.jpg"/>
 				</Two>
+				<Three>
+					<Img src="/photos/tomato.jpg"/>
+					<Img src="/photos/tomato.jpg"/>
+					<Img src="/photos/tomato.jpg"/>
+				</Three>
 			</Container>
 		);
 	}

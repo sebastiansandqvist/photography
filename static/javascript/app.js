@@ -54,6 +54,13 @@ webpackJsonp([0],{
 						null,
 						_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/tomato.jpg' }),
 						_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/tomato.jpg' })
+					),
+					_react2['default'].createElement(
+						_componentsLayout.Three,
+						null,
+						_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/tomato.jpg' }),
+						_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/tomato.jpg' }),
+						_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/tomato.jpg' })
 					)
 				);
 			}
@@ -220,7 +227,7 @@ webpackJsonp([0],{
 				return {
 					boxSizing: 'border-box',
 					margin: '0 auto',
-					maxWidth: 1000,
+					maxWidth: 1200,
 					padding: '64px 24px',
 					width: '100%'
 				};
@@ -281,10 +288,58 @@ webpackJsonp([0],{
 	exports.Sep = Sep;
 	;
 
-	// --------------------------------- Two ---------------------------------
+	// --------------------------------- Fraction ---------------------------------
 
-	var Two = (function (_React$Component3) {
-		_inherits(Two, _React$Component3);
+	var Fraction = (function (_React$Component3) {
+		_inherits(Fraction, _React$Component3);
+
+		function Fraction() {
+			_classCallCheck(this, _Fraction);
+
+			_get(Object.getPrototypeOf(_Fraction.prototype), 'constructor', this).apply(this, arguments);
+		}
+
+		// --------------------------------- Two ---------------------------------
+
+		_createClass(Fraction, [{
+			key: 'style',
+			value: function style() {
+
+				return {
+					float: this.props.align,
+					marginRight: this.props.align === 'left' ? 64 : null,
+					width: this.props.parentWidth / this.props.n - (this.props.n - 1) * 64 / this.props.n,
+					'@media (max-width: 1210px)': {
+						float: 'none',
+						marginRight: 0,
+						width: '100%'
+					}
+				};
+			}
+		}, {
+			key: 'render',
+			value: function render() {
+				return _react2['default'].createElement(
+					'div',
+					{ style: this.style() },
+					this.props.children
+				);
+			}
+		}], [{
+			key: 'defaultProps',
+			value: {
+				parentWidth: 1000
+			},
+			enumerable: true
+		}]);
+
+		var _Fraction = Fraction;
+		Fraction = (0, _radium2['default'])(Fraction) || Fraction;
+		return Fraction;
+	})(_react2['default'].Component);
+
+	var Two = (function (_React$Component4) {
+		_inherits(Two, _React$Component4);
 
 		function Two() {
 			_classCallCheck(this, _Two);
@@ -295,22 +350,35 @@ webpackJsonp([0],{
 		_createClass(Two, [{
 			key: 'componentDidMount',
 			value: function componentDidMount() {
-				console.log(this.props.children);
-				console.log(Array.isArray(this.props.children));
-			}
-		}, {
-			key: 'style',
-			value: function style() {
-				return {};
+				var width = _react2['default'].findDOMNode(this).getBoundingClientRect().width;
+				this.setState({ width: width });
 			}
 		}, {
 			key: 'render',
 			value: function render() {
 
+				var children = [];
+				_react2['default'].Children.forEach(this.props.children, function (child) {
+					children.push(child);
+				});
+
+				if (children.length !== 2) {
+					console.warn('Two component requires exactly 2 children. You provided ' + children.length);
+				}
+
 				return _react2['default'].createElement(
 					'div',
-					{ style: this.style() },
-					this.props.children
+					null,
+					_react2['default'].createElement(
+						Fraction,
+						{ n: 2, align: 'left', parentWidth: this.state.width },
+						children[0]
+					),
+					_react2['default'].createElement(
+						Fraction,
+						{ n: 2, align: 'right', parentWidth: this.state.width },
+						children[1]
+					)
 				);
 			}
 		}]);
@@ -321,6 +389,66 @@ webpackJsonp([0],{
 	})(_react2['default'].Component);
 
 	exports.Two = Two;
+	;
+
+	// --------------------------------- Three ---------------------------------
+
+	var Three = (function (_React$Component5) {
+		_inherits(Three, _React$Component5);
+
+		function Three() {
+			_classCallCheck(this, _Three);
+
+			_get(Object.getPrototypeOf(_Three.prototype), 'constructor', this).apply(this, arguments);
+		}
+
+		_createClass(Three, [{
+			key: 'componentDidMount',
+			value: function componentDidMount() {
+				var width = _react2['default'].findDOMNode(this).getBoundingClientRect().width;
+				this.setState({ width: width });
+			}
+		}, {
+			key: 'render',
+			value: function render() {
+
+				var children = [];
+				_react2['default'].Children.forEach(this.props.children, function (child) {
+					children.push(child);
+				});
+
+				if (children.length !== 3) {
+					console.warn('Three component requires exactly 3 children. You provided ' + children.length);
+				}
+
+				return _react2['default'].createElement(
+					'div',
+					null,
+					_react2['default'].createElement(
+						Fraction,
+						{ n: 3, align: 'left', parentWidth: this.state.width },
+						children[0]
+					),
+					_react2['default'].createElement(
+						Fraction,
+						{ n: 3, align: 'left', parentWidth: this.state.width },
+						children[1]
+					),
+					_react2['default'].createElement(
+						Fraction,
+						{ n: 3, align: 'right', parentWidth: this.state.width },
+						children[2]
+					)
+				);
+			}
+		}]);
+
+		var _Three = Three;
+		Three = (0, _radium2['default'])(Three) || Three;
+		return Three;
+	})(_react2['default'].Component);
+
+	exports.Three = Three;
 	;
 
 /***/ },
@@ -383,6 +511,12 @@ webpackJsonp([0],{
 					this.props.children
 				);
 			}
+		}], [{
+			key: 'propTypes',
+			value: {
+				children: _react2['default'].PropTypes.string.isRequired
+			},
+			enumerable: true
 		}]);
 
 		var _Title = Title;
@@ -432,11 +566,6 @@ webpackJsonp([0],{
 		}
 
 		_createClass(Img, [{
-			key: 'src',
-			value: function src() {
-				return this.props.src.replace('/photos/', '/photos/full/');
-			}
-		}, {
 			key: 'style',
 			value: function style() {
 				return {
@@ -456,15 +585,25 @@ webpackJsonp([0],{
 		}, {
 			key: 'render',
 			value: function render() {
+
+				var src = this.props.src;
+				var full = '/photos/full/';
+
 				return _react2['default'].createElement(
 					'a',
-					{ href: this.src(), style: this.style() },
+					{ href: src.replace('/photos/', full), style: this.style() },
 					_react2['default'].createElement('img', {
-						src: this.props.src,
+						src: src,
 						alt: 'Photography by Sebastian Sandqvist',
 						style: this.imgStyle() })
 				);
 			}
+		}], [{
+			key: 'propTypes',
+			value: {
+				src: _react2['default'].PropTypes.string.isRequired
+			},
+			enumerable: true
 		}]);
 
 		var _Img = Img;
@@ -475,12 +614,6 @@ webpackJsonp([0],{
 	exports['default'] = Img;
 	;
 	module.exports = exports['default'];
-
-	// componentWillMount() {
-
-	// }
-	//
-	//
 
 /***/ }
 

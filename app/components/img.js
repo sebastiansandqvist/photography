@@ -4,24 +4,15 @@ import Radium from 'radium';
 @Radium
 export default class Img extends React.Component {
 
-	// componentWillMount() {
-
-	// }
-	// 
-	// 
-	propTypes: {
-		src: React.propTypes.number.isRequired
-	}
-
-	src() {
-		return this.props.src.replace('/photos/', '/photos/full/');
+	static propTypes = {
+		src: React.PropTypes.string.isRequired
 	}
 
 	style() {
 		return {
 			display: 'block',
 			marginBottom: 64
-		};
+		}
 	}
 	
 	imgStyle() {
@@ -29,18 +20,22 @@ export default class Img extends React.Component {
 			border: 0,
 			boxShadow: '0 1px 5px #000',
 			width: '100%'
-		};
+		}
 	}
 
 	render() {
+
+		let src = this.props.src;
+		const full = '/photos/full/';
+		
 		return (
-			<a href={this.src()} style={this.style()}>
+			<a href={src.replace('/photos/', full)} style={this.style()}>
 				<img
-					src={this.props.src}
+					src={src}
 					alt="Photography by Sebastian Sandqvist"
 					style={this.imgStyle()}/>
 			</a>
-		);
+		)
 	}
 
 };

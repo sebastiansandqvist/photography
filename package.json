@@ -1,13 +1,13 @@
 {
   "name": "photography",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Photography by Sebastian Sandqvist",
-  "main": "server/index.js",
+  "main": "server.js",
   "scripts": {
     "lint": "jscs server/**/*.js --config=./config/jscs.json && eslint server/**/*.js -c /config/eslint.json",
     "postlint": "jscs app/**/*.js --config=./config/jscs.json && eslint app/**/*.js -c /config/eslint.json",
     "start": "node server",
-    "pack": "webpack --progress",
+    "pack": "webpack --progress --watch",
     "build": "NODE_ENV=production webpack -p --config webpack.production.js"
   },
   "repository": {
@@ -34,6 +34,7 @@
     "webpack-split-by-path": "0.0.6"
   },
   "dependencies": {
+    "express": "^4.13.3",
     "md5": "^2.0.0",
     "radium": "^0.14.1",
     "react": "^0.13.3"

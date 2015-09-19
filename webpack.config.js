@@ -18,6 +18,7 @@ module.exports = {
 		loaders: [{
 			exclude: /(node_modules)/,
 			loader: 'babel',
+			query: { stage: 1 },
 			test: /\.js$/
 		}]
 	},

@@ -76,7 +76,7 @@ class Fraction extends React.Component {
 			float: this.props.align,
 			marginRight: this.props.align === 'left' ? 64 : null,
 			width: (this.props.parentWidth / this.props.n) - ((this.props.n - 1) * 64 / this.props.n),
-			'@media (max-width: 1210px)': {
+			'@media (max-width: 1220px)': {
 				float: 'none',
 				marginRight: 0,
 				width: '100%'

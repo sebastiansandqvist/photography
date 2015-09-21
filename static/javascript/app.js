@@ -49,18 +49,42 @@ webpackJsonp([0],{
 					),
 					_react2['default'].createElement(_componentsLayout.Sep, null),
 					_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/tomato.jpg' }),
+					_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/waterlight.jpg' }),
+					_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/winter.jpg' }),
 					_react2['default'].createElement(
 						_componentsLayout.Two,
 						null,
-						_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/tomato.jpg' }),
-						_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/tomato.jpg' })
+						_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/ocean-sail.jpg' }),
+						_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/ocean-seagull.jpg' })
 					),
+					_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/bubbles.jpg' }),
+					_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/dante.jpg' }),
+					_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/dream.jpg' }),
+					_react2['default'].createElement(
+						_componentsLayout.Two,
+						null,
+						_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/pattern-iguana.jpg' }),
+						_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/pattern-chicken.jpg' })
+					),
+					_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/blue.jpg' }),
 					_react2['default'].createElement(
 						_componentsLayout.Three,
 						null,
-						_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/tomato.jpg' }),
-						_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/tomato.jpg' }),
-						_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/tomato.jpg' })
+						_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/fishing-rod.jpg' }),
+						_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/fishing-net.jpg' }),
+						_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/fishing-stuff.jpg' })
+					),
+					_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/vegas.jpg' }),
+					_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/spork.jpg' }),
+					_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/mountains.jpg' }),
+					_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/rain.jpg' }),
+					_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/buddha.jpg' }),
+					_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/water.jpg' }),
+					_react2['default'].createElement(
+						_componentsLayout.Two,
+						null,
+						_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/monkey.jpg' }),
+						_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/ocelot.jpg' })
 					)
 				);
 			}
@@ -309,7 +333,7 @@ webpackJsonp([0],{
 					float: this.props.align,
 					marginRight: this.props.align === 'left' ? 64 : null,
 					width: this.props.parentWidth / this.props.n - (this.props.n - 1) * 64 / this.props.n,
-					'@media (max-width: 1210px)': {
+					'@media (max-width: 1220px)': {
 						float: 'none',
 						marginRight: 0,
 						width: '100%'

@@ -12,6 +12,10 @@ production.output = {
 	chunkFilename: '[name]-[chunkhash].js'
 }
 
+production.resolve = {
+	alias: { react: 'react/dist/react.min.js' }
+};
+
 production.plugins.push(new Clean(['static/javascript/min']));
 
 module.exports = production;

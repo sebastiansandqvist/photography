@@ -8,7 +8,7 @@
     "postlint": "jscs app/**/*.js --config=./config/jscs.json && eslint app/**/*.js -c /config/eslint.json",
     "start": "node server",
     "pack": "webpack --progress --watch",
-    "build": "NODE_ENV=production webpack -p --config webpack.production.js"
+    "build": "NODE_ENV=production webpack --progress -p --config webpack.production.js"
   },
   "repository": {
     "type": "git",

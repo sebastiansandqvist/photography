@@ -53,6 +53,5 @@ app.get('/', function(req, res) {
 
 // --------------------------------- server ---------------------------------
 
-app.listen(3000, function() {
-	console.log('localhost:3000');
-});
+const PORT = Number(process.env.PORT || 3000);
+app.listen(PORT);

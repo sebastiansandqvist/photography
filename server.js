@@ -2,6 +2,7 @@
 
 // --------------------------------- dependencies ---------------------------------
 
+const compression = require('compression');
 const express = require('express');
 let app = express();
 
@@ -10,6 +11,8 @@ const fs = require('fs');
 const htmlStringify = require('./lib/html-stringify.js');
 
 // --------------------------------- init ---------------------------------
+
+app.use(compression());
 
 app.use(express.static('static'));
 

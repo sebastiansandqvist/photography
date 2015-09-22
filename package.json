@@ -9,8 +9,8 @@
   "scripts": {
     "lint": "jscs server.js --config=./config/jscs.json && eslint server.js -c ./config/eslint.json",
     "prelint": "jscs -e app/**/*.js --config=./config/jscs.json && eslint app/**/*.js -c ./config/eslint.json",
-    "start": "node server",
-    "dev": "npm start",
+    "start": "NODE_ENV=production node server",
+    "dev": "node server",
     "predev": "npm run build",
     "pack": "webpack --progress --watch",
     "build": "NODE_ENV=production webpack --progress -p --config webpack.production.js"

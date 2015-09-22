@@ -49,13 +49,13 @@ export class Sep extends React.Component {
 			margin: '64px auto',
 			maxWidth: '50%',
 			width: 200
-		}
+		};
 	}
 
 	render() {
 		return (
 			<div style={this.style()}></div>
-		)
+		);
 	}
 
 };
@@ -81,7 +81,7 @@ class Fraction extends React.Component {
 				marginRight: 0,
 				width: '100%'
 			}
-		}
+		};
 	}
 
 	render() {
@@ -89,7 +89,7 @@ class Fraction extends React.Component {
 			<div style={this.style()}>
 				{this.props.children}
 			</div>
-		)
+		);
 	}
 
 }
@@ -116,12 +116,12 @@ export class Two extends React.Component {
 			console.warn(`Two component requires exactly 2 children. You provided ${children.length}`);
 		}
 
-		return(
+		return (
 			<div>
 				<Fraction n={2} align='left' parentWidth={this.state.width}>{children[0]}</Fraction>
 				<Fraction n={2} align='right' parentWidth={this.state.width}>{children[1]}</Fraction>
 			</div>
-		)
+		);
 	}
 
 };
@@ -134,7 +134,7 @@ export class Three extends React.Component {
 
 	componentDidMount() {
 		let width = React.findDOMNode(this).getBoundingClientRect().width;
-		this.setState({width: width})
+		this.setState({width: width});
 	}
 
 	render() {
@@ -148,13 +148,13 @@ export class Three extends React.Component {
 			console.warn(`Three component requires exactly 3 children. You provided ${children.length}`);
 		}
 
-		return(
+		return (
 			<div>
 				<Fraction n={3} align='left' parentWidth={this.state.width}>{children[0]}</Fraction>
 				<Fraction n={3} align='left' parentWidth={this.state.width}>{children[1]}</Fraction>
 				<Fraction n={3} align='right' parentWidth={this.state.width}>{children[2]}</Fraction>
 			</div>
-		)
+		);
 	}
 
 };

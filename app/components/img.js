@@ -12,7 +12,7 @@ export default class Img extends React.Component {
 		return {
 			display: 'block',
 			marginBottom: 64
-		}
+		};
 	}
 	
 	imgStyle() {
@@ -20,7 +20,7 @@ export default class Img extends React.Component {
 			border: 0,
 			boxShadow: '0 1px 5px #000',
 			width: '100%'
-		}
+		};
 	}
 
 	render() {
@@ -32,10 +32,10 @@ export default class Img extends React.Component {
 			<a href={src.replace('/photos/', full)} style={this.style()}>
 				<img
 					src={src}
-					alt="Photography by Sebastian Sandqvist"
+					alt='Photography by Sebastian Sandqvist'
 					style={this.imgStyle()}/>
 			</a>
-		)
+		);
 	}
 
 };

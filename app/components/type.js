@@ -16,8 +16,8 @@ export class Title extends React.Component {
 			margin: 0,
 			padding: 0,
 			textAlign: 'center',
-			textIndent: 8,
-		}
+			textIndent: 8
+		};
 	}
 
 	render() {

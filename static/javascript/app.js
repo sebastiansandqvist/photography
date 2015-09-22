@@ -66,7 +66,8 @@ webpackJsonp([0],{
 						_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/pattern-iguana.jpg' }),
 						_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/pattern-chicken.jpg' })
 					),
-					_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/blue.jpg' }),
+					_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/mountains.jpg' }),
+					_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/vegas.jpg' }),
 					_react2['default'].createElement(
 						_componentsLayout.Three,
 						null,
@@ -74,18 +75,35 @@ webpackJsonp([0],{
 						_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/fishing-net.jpg' }),
 						_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/fishing-stuff.jpg' })
 					),
-					_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/vegas.jpg' }),
 					_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/spork.jpg' }),
-					_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/mountains.jpg' }),
-					_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/rain.jpg' }),
-					_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/buddha.jpg' }),
-					_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/water.jpg' }),
+					_react2['default'].createElement(
+						_componentsLayout.Two,
+						null,
+						_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/rain.jpg' }),
+						_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/waterfall.jpg' })
+					),
+					_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/fall.jpg' }),
+					_react2['default'].createElement(
+						_componentsLayout.Two,
+						null,
+						_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/buddha.jpg' }),
+						_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/water.jpg' })
+					),
+					_react2['default'].createElement(
+						_componentsLayout.Three,
+						null,
+						_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/corkscrew-1.jpg' }),
+						_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/corkscrew-2.jpg' }),
+						_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/corkscrew-3.jpg' })
+					),
 					_react2['default'].createElement(
 						_componentsLayout.Two,
 						null,
 						_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/monkey.jpg' }),
 						_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/ocelot.jpg' })
-					)
+					),
+					_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/blue.jpg' }),
+					_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/whitespace.jpg' })
 				);
 			}
 		}]);

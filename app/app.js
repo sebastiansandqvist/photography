@@ -24,22 +24,34 @@ class App extends React.Component {
 					<Img src='/photos/pattern-iguana.jpg'/>
 					<Img src='/photos/pattern-chicken.jpg'/>
 				</Two>
-				<Img src='/photos/blue.jpg'/>
+				<Img src='/photos/mountains.jpg'/>
+				<Img src='/photos/vegas.jpg'/>
 				<Three>
 					<Img src='/photos/fishing-rod.jpg'/>
 					<Img src='/photos/fishing-net.jpg'/>
 					<Img src='/photos/fishing-stuff.jpg'/>
 				</Three>
-				<Img src='/photos/vegas.jpg'/>
 				<Img src='/photos/spork.jpg'/>
-				<Img src='/photos/mountains.jpg'/>
-				<Img src='/photos/rain.jpg'/>
-				<Img src='/photos/buddha.jpg'/>
-				<Img src='/photos/water.jpg'/>
+				<Two>
+					<Img src='/photos/rain.jpg'/>
+					<Img src='/photos/waterfall.jpg'/>
+				</Two>
+				<Img src='/photos/fall.jpg'/>
+				<Two>
+					<Img src='/photos/buddha.jpg'/>
+					<Img src='/photos/water.jpg'/>
+				</Two>
+				<Three>
+					<Img src='/photos/corkscrew-1.jpg'/>
+					<Img src='/photos/corkscrew-2.jpg'/>
+					<Img src='/photos/corkscrew-3.jpg'/>
+				</Three>
 				<Two>
 					<Img src='/photos/monkey.jpg'/>
 					<Img src='/photos/ocelot.jpg'/>
 				</Two>
+				<Img src='/photos/blue.jpg'/>
+				<Img src='/photos/whitespace.jpg'/>
 			</Container>
 		);
 	}

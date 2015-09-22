@@ -33,11 +33,6 @@ class App extends React.Component {
 				</Three>
 				<Img src='/photos/spork.jpg'/>
 				<Two>
-					<Img src='/photos/rain.jpg'/>
-					<Img src='/photos/waterfall.jpg'/>
-				</Two>
-				<Img src='/photos/fall.jpg'/>
-				<Two>
 					<Img src='/photos/buddha.jpg'/>
 					<Img src='/photos/water.jpg'/>
 				</Two>

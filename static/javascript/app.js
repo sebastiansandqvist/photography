@@ -79,13 +79,6 @@ webpackJsonp([0],{
 					_react2['default'].createElement(
 						_componentsLayout.Two,
 						null,
-						_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/rain.jpg' }),
-						_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/waterfall.jpg' })
-					),
-					_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/fall.jpg' }),
-					_react2['default'].createElement(
-						_componentsLayout.Two,
-						null,
 						_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/buddha.jpg' }),
 						_react2['default'].createElement(_componentsImgJs2['default'], { src: '/photos/water.jpg' })
 					),

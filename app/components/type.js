@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { Component, PropTypes } from 'react';
 import Radium from 'radium';
 
 @Radium
-export class Title extends React.Component {
+export class Title extends Component {
 
 	static propTypes = {
-		children: React.PropTypes.string.isRequired
+		children: PropTypes.string.isRequired
 	}
 
 	style() {

@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { Component, PropTypes } from 'react';
 import Radium from 'radium';
 
 // --------------------------------- Container ---------------------------------
 
 @Radium
-export class Container extends React.Component {
+export class Container extends Component {
+
+	static propTypes = {
+		children: PropTypes.arrayOf(PropTypes.element).isRequired
+	}
 
 	componentWillMount() {
 		document.body.style.backgroundColor = '#111';
@@ -34,13 +38,13 @@ export class Container extends React.Component {
 		);
 	}
 
-};
+}
 
 
 // --------------------------------- Sep ---------------------------------
 
 @Radium
-export class Sep extends React.Component {
+export class Sep extends Component {
 
 	style() {
 		return {
@@ -58,16 +62,21 @@ export class Sep extends React.Component {
 		);
 	}
 
-};
+}
 
 
 // --------------------------------- Fraction ---------------------------------
 
 @Radium
-class Fraction extends React.Component {
+class Fraction extends Component {
 
 	static defaultProps = {
 		parentWidth: 1000
+	}
+
+	static propTypes = {
+		align: PropTypes.string.isRequired,
+		parentWidth: PropTypes.number.isRequired
 	}
 
 	style() {
@@ -98,7 +107,7 @@ class Fraction extends React.Component {
 // --------------------------------- Two ---------------------------------
 
 @Radium
-export class Two extends React.Component {
+export class Two extends Component {
 
 	componentDidMount() {
 		let width = React.findDOMNode(this).getBoundingClientRect().width;
@@ -124,13 +133,13 @@ export class Two extends React.Component {
 		);
 	}
 
-};
+}
 
 
 // --------------------------------- Three ---------------------------------
 
 @Radium
-export class Three extends React.Component {
+export class Three extends Component {
 
 	componentDidMount() {
 		let width = React.findDOMNode(this).getBoundingClientRect().width;
@@ -157,4 +166,4 @@ export class Three extends React.Component {
 		);
 	}
 
-};
+}

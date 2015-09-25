@@ -27,8 +27,8 @@ webpackJsonp([0],{
 
 	var _componentsImgJs2 = _interopRequireDefault(_componentsImgJs);
 
-	var App = (function (_React$Component) {
-		_inherits(App, _React$Component);
+	var App = (function (_Component) {
+		_inherits(App, _Component);
 
 		function App() {
 			_classCallCheck(this, App);
@@ -102,7 +102,7 @@ webpackJsonp([0],{
 		}]);
 
 		return App;
-	})(_react2['default'].Component);
+	})(_react.Component);
 
 	_react2['default'].render(_react2['default'].createElement(App, null), document.body);
 
@@ -235,14 +235,16 @@ webpackJsonp([0],{
 
 	// --------------------------------- Container ---------------------------------
 
-	var Container = (function (_React$Component) {
-		_inherits(Container, _React$Component);
+	var Container = (function (_Component) {
+		_inherits(Container, _Component);
 
 		function Container() {
 			_classCallCheck(this, _Container);
 
 			_get(Object.getPrototypeOf(_Container.prototype), 'constructor', this).apply(this, arguments);
 		}
+
+		// --------------------------------- Sep ---------------------------------
 
 		_createClass(Container, [{
 			key: 'componentWillMount',
@@ -276,26 +278,31 @@ webpackJsonp([0],{
 					this.props.children
 				);
 			}
+		}], [{
+			key: 'propTypes',
+			value: {
+				children: _react.PropTypes.arrayOf(_react.PropTypes.element).isRequired
+			},
+			enumerable: true
 		}]);
 
 		var _Container = Container;
 		Container = (0, _radium2['default'])(Container) || Container;
 		return Container;
-	})(_react2['default'].Component);
+	})(_react.Component);
 
 	exports.Container = Container;
-	;
 
-	// --------------------------------- Sep ---------------------------------
-
-	var Sep = (function (_React$Component2) {
-		_inherits(Sep, _React$Component2);
+	var Sep = (function (_Component2) {
+		_inherits(Sep, _Component2);
 
 		function Sep() {
 			_classCallCheck(this, _Sep);
 
 			_get(Object.getPrototypeOf(_Sep.prototype), 'constructor', this).apply(this, arguments);
 		}
+
+		// --------------------------------- Fraction ---------------------------------
 
 		_createClass(Sep, [{
 			key: 'style',
@@ -318,15 +325,12 @@ webpackJsonp([0],{
 		var _Sep = Sep;
 		Sep = (0, _radium2['default'])(Sep) || Sep;
 		return Sep;
-	})(_react2['default'].Component);
+	})(_react.Component);
 
 	exports.Sep = Sep;
-	;
 
-	// --------------------------------- Fraction ---------------------------------
-
-	var Fraction = (function (_React$Component3) {
-		_inherits(Fraction, _React$Component3);
+	var Fraction = (function (_Component3) {
+		_inherits(Fraction, _Component3);
 
 		function Fraction() {
 			_classCallCheck(this, _Fraction);
@@ -366,21 +370,30 @@ webpackJsonp([0],{
 				parentWidth: 1000
 			},
 			enumerable: true
+		}, {
+			key: 'propTypes',
+			value: {
+				align: _react.PropTypes.string.isRequired,
+				parentWidth: _react.PropTypes.number.isRequired
+			},
+			enumerable: true
 		}]);
 
 		var _Fraction = Fraction;
 		Fraction = (0, _radium2['default'])(Fraction) || Fraction;
 		return Fraction;
-	})(_react2['default'].Component);
+	})(_react.Component);
 
-	var Two = (function (_React$Component4) {
-		_inherits(Two, _React$Component4);
+	var Two = (function (_Component4) {
+		_inherits(Two, _Component4);
 
 		function Two() {
 			_classCallCheck(this, _Two);
 
 			_get(Object.getPrototypeOf(_Two.prototype), 'constructor', this).apply(this, arguments);
 		}
+
+		// --------------------------------- Three ---------------------------------
 
 		_createClass(Two, [{
 			key: 'componentDidMount',
@@ -421,15 +434,12 @@ webpackJsonp([0],{
 		var _Two = Two;
 		Two = (0, _radium2['default'])(Two) || Two;
 		return Two;
-	})(_react2['default'].Component);
+	})(_react.Component);
 
 	exports.Two = Two;
-	;
 
-	// --------------------------------- Three ---------------------------------
-
-	var Three = (function (_React$Component5) {
-		_inherits(Three, _React$Component5);
+	var Three = (function (_Component5) {
+		_inherits(Three, _Component5);
 
 		function Three() {
 			_classCallCheck(this, _Three);
@@ -481,10 +491,9 @@ webpackJsonp([0],{
 		var _Three = Three;
 		Three = (0, _radium2['default'])(Three) || Three;
 		return Three;
-	})(_react2['default'].Component);
+	})(_react.Component);
 
 	exports.Three = Three;
-	;
 
 /***/ },
 
@@ -515,8 +524,8 @@ webpackJsonp([0],{
 
 	var _radium2 = _interopRequireDefault(_radium);
 
-	var Title = (function (_React$Component) {
-		_inherits(Title, _React$Component);
+	var Title = (function (_Component) {
+		_inherits(Title, _Component);
 
 		function Title() {
 			_classCallCheck(this, _Title);
@@ -549,7 +558,7 @@ webpackJsonp([0],{
 		}], [{
 			key: 'propTypes',
 			value: {
-				children: _react2['default'].PropTypes.string.isRequired
+				children: _react.PropTypes.string.isRequired
 			},
 			enumerable: true
 		}]);
@@ -557,7 +566,7 @@ webpackJsonp([0],{
 		var _Title = Title;
 		Title = (0, _radium2['default'])(Title) || Title;
 		return Title;
-	})(_react2['default'].Component);
+	})(_react.Component);
 
 	exports.Title = Title;
 	;
@@ -591,8 +600,8 @@ webpackJsonp([0],{
 
 	var _radium2 = _interopRequireDefault(_radium);
 
-	var Img = (function (_React$Component) {
-		_inherits(Img, _React$Component);
+	var Img = (function (_Component) {
+		_inherits(Img, _Component);
 
 		function Img() {
 			_classCallCheck(this, _Img);
@@ -636,7 +645,7 @@ webpackJsonp([0],{
 		}], [{
 			key: 'propTypes',
 			value: {
-				src: _react2['default'].PropTypes.string.isRequired
+				src: _react.PropTypes.string.isRequired
 			},
 			enumerable: true
 		}]);
@@ -644,10 +653,9 @@ webpackJsonp([0],{
 		var _Img = Img;
 		Img = (0, _radium2['default'])(Img) || Img;
 		return Img;
-	})(_react2['default'].Component);
+	})(_react.Component);
 
 	exports['default'] = Img;
-	;
 	module.exports = exports['default'];
 
 /***/ }

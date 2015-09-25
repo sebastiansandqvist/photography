@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { Component, PropTypes } from 'react';
 import Radium from 'radium';
 
 @Radium
-export default class Img extends React.Component {
+export default class Img extends Component {
 
 	static propTypes = {
-		src: React.PropTypes.string.isRequired
+		src: PropTypes.string.isRequired
 	}
 
 	style() {
@@ -25,7 +25,7 @@ export default class Img extends React.Component {
 
 	render() {
 
-		let src = this.props.src;
+		const src = this.props.src;
 		const full = '/photos/full/';
 		
 		return (
@@ -38,4 +38,4 @@ export default class Img extends React.Component {
 		);
 	}
 
-};
+}

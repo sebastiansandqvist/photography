@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Container, Sep, Two, Three } from './components/layout';
 import { Title } from './components/type.js';
 import Img from './components/img.js'
 
-class App extends React.Component {
+class App extends Component {
 
 	render() {
 		return (
